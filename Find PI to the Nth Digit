@@ -1,0 +1,13 @@
+const getPiDecimal = (number) => {
+  const piInterger = '3.';
+  const piDecimal = '14159265358979323846264338327950288';
+  const numberExtract = piDecimal.substr(0,number);
+
+  if (number === undefined || number === 0 || number > 35) {
+    console.log('Insert number between 1 and 35.')
+  } else {
+    console.log(piInterger + numberExtract);
+  }
+ 
+ }
+getPiDecimal()
