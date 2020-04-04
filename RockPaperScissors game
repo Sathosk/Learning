@@ -1,0 +1,49 @@
+//Simple rock, paper, scissors random generator.
+
+const game = () => {
+  const hands = ['Rock', 'Paper', 'Scissors'];
+  const handsPlayer = (Math.floor(Math.random() * 3));
+  const handsComputer = (Math.floor(Math.random() * 3));
+  const playerChoice = hands[handsPlayer];
+  const computerChoice = hands[handsComputer];
+  console.log('Player choice = ' + playerChoice);
+  console.log('Computer choice = ' + computerChoice);
+  
+  //Check for tie.
+  if (playerChoice === computerChoice) {
+    console.log("It's a tie.");
+    return;
+  }
+  //Check for Rock.
+  if (playerChoice === 'Rock') {
+    if (computerChoice === 'Paper') {
+      console.log('Computer Wins') 
+       } else {
+      console.log('Player Wins')      
+       }
+    return;
+     }
+  
+  //Check for Paper
+  if (playerChoice === 'Paper') {
+    if (computerChoice === 'Scissors') {
+      console.log('Computer Wins') 
+       } else {
+      console.log('Player Wins')      
+       }
+    return;
+     }
+  
+  //Check for Scissors
+  if (playerChoice === 'Scissors') {
+    if (computerChoice === 'Rock') {
+      console.log('Computer Wins') 
+       } else {
+      console.log('Player Wins')      
+       }
+    return;
+     }
+    
+   }
+ 
+game();
