@@ -1,0 +1,29 @@
+//Part 3, Exercise 1 ---------------------------------------------------------------------------------------------------------------------
+
+let language = 'JavaScript';
+
+//a) Use string concatenation and two .slice() methods to print 'JS' from 'JavaScript'.
+console.log(language.slice(0, 1) + language.slice(4, 5));
+
+
+//b) Without using .slice(), use method chaining to accomplish the same thing.
+console.log(language.replace('avaScript', '').padEnd(2, 'S'));
+
+
+//c) Use bracket notation and a template literal to print "The abbreviation for 'JavaScript' is 'JS'."
+let firstCapital = language[0],
+    secondCapital = language[4];
+console.log(`The abbreviation for '${language}' is '${firstCapital}${secondCapital}'`);
+
+
+//d) Just for fun, try chaining 3 or more methods together, and then print the result.
+console.log(language.replace('ava', '').slice(0, 2).padEnd(10, '!1!'));
+
+//Part 3, Exercise 2 ---------------------------------------------------------------------------------------------------------------------
+
+/* Some programming languages (like Python) include a "title" method to return a string with Every Word Capitalized (e.g. 'title case'.title() returns 'Title Case').  
+
+JavaScript has no .title method, but that won't stop us!  Use the string methods you know to print 'Title Case' from 'title case'. */
+
+let notTitle = 'title case';
+console.log(notTitle.replace('t', 'T').replace('c', 'C'));
