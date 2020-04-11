@@ -20,10 +20,10 @@ for (let i = 0; i < question.length; i++) {
 
 let scoreResult = totalCorrectAnswers / 5 * 100;
 
+console.log (`>>> Overall Grade: ${scoreResult}% (${totalCorrectAnswers} of 5 responses correct) <<<`);
+
 if (scoreResult >= 80) {
-  console.log (`>>> Overall Grade: ${scoreResult}% (${totalCorrectAnswers} of 5 responses correct) <<<`);
   console.log ('>>> Status: PASS <<<');
 } else {
-  console.log (`>>> Overall Grade: ${scoreResult}% (${totalCorrectAnswers} of 5 responses correct) <<<`);
   console.log ('>>> Status: FAILED <<<');
 };
