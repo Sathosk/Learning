@@ -36,7 +36,7 @@ return userInput = functionUserInput;
 const runProgram = () => {
  initialPrompt();
  let newArr = ['0', '1', '2'];
- if (userInput.toLowerCase() != newArr. ) {
+ if (newArr.includes(userInput) === false) {
    console.log(`>>>>Please select a valid number.<<<<\n`);
    runProgram();
  }
